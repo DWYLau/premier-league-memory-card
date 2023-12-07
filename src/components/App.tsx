@@ -1,8 +1,13 @@
-import "../styles/App.css"
 import Header from "./Header"
+import StartGame from "./StartGame"
 
 function App() {
-  return <Header />
+  return (
+    <>
+      <Header />
+      <StartGame />
+    </>
+  )
 }
 
 export default App

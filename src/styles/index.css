@@ -2,5 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+body {
+  background: url("../assets/premier-league-background.jpg");
+  background-size: cover;
 }
