@@ -1,8 +1,14 @@
+import trophy from "../assets/trophy.png"
+
 function StartGame() {
   return (
-    <div className='absolute top-48 left-0 right-0 mx-auto h-96 w-1/4  bg-[#37003c] border-4 rounded-2xl border-white w-90 flex flex-col justify-center items-center'>
-      <p>Click on a player card to get points!</p>
-      <p>But don't click on the same player twice!</p>
+    <div className='absolute top-32 left-0 right-0 mx-auto h-96 w-1/4  bg-white border-4 rounded-2xl border-[#37003c] w-90 flex flex-col justify-center items-center'>
+      <img className='h-40 m-2' src={trophy} alt='Premier League Trophy' />
+      <div>
+        <p>Aim for the prestigious Premier League trophy!</p>
+        <p>Click on a player card to get points!</p>
+        <p>But don't click on the same player twice!</p>
+      </div>
       <button>Start Game</button>
     </div>
   )

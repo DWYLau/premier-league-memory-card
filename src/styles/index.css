@@ -3,6 +3,8 @@
 @tailwind utilities;
 
 body {
-  background: url("../assets/premier-league-background.jpg");
-  background-size: cover;
+  height: 100vh;
+  background: url("../assets/premier-league-logo.png") no-repeat;
+  background-position-x: left;
+  background-position-y: bottom;
 }
