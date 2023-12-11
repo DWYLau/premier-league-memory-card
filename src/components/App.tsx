@@ -1,11 +1,11 @@
 import Header from "./Header"
-import StartGame from "./StartGame"
+import Form from "./Form"
 
 function App() {
   return (
     <>
       <Header />
-      <StartGame />
+      <Form />
     </>
   )
 }

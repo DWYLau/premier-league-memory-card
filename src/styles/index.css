@@ -5,6 +5,11 @@
 body {
   height: 100vh;
   background: url("../assets/premier-league-logo.png") no-repeat;
+  background-color: #f0f0f0;
   background-position-x: left;
   background-position-y: bottom;
+}
+
+#root {
+  height: 100vh;
 }
