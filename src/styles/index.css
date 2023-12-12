@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Inter+Tight:wght@300&family=Outfit:wght@500&family=Oxygen&display=swap");
 
 body {
   height: 100vh;

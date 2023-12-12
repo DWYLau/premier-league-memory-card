@@ -40,6 +40,7 @@ const players = [
     image: Haaland,
     team: City,
     nationality: Norway,
+    color: "bg-sky-300",
   },
   {
     id: 2,
@@ -48,6 +49,7 @@ const players = [
     image: Mitoma,
     team: Brighton,
     nationality: Japan,
+    color: "bg-sky-100",
   },
   {
     id: 3,
@@ -56,6 +58,7 @@ const players = [
     image: Salah,
     team: Liverpool,
     nationality: Egypt,
+    color: "bg-red-500",
   },
   {
     id: 4,
@@ -64,6 +67,7 @@ const players = [
     image: Odegaard,
     team: Arsenal,
     nationality: Norway,
+    color: "bg-red-600",
   },
   {
     id: 5,
@@ -72,6 +76,7 @@ const players = [
     image: Luiz,
     team: Villa,
     nationality: Brazil,
+    color: "bg-red-950",
   },
   {
     id: 6,
@@ -80,6 +85,7 @@ const players = [
     image: Palhinha,
     team: Fulham,
     nationality: Portugal,
+    color: "bg-slate-100",
   },
   {
     id: 7,
@@ -88,6 +94,7 @@ const players = [
     image: Shaw,
     team: United,
     nationality: England,
+    color: "bg-red-600",
   },
   {
     id: 8,
@@ -96,6 +103,7 @@ const players = [
     image: Aguerd,
     team: WestHam,
     nationality: Morocco,
+    color: "bg-amber-700",
   },
   {
     id: 9,
@@ -104,6 +112,7 @@ const players = [
     image: Silva,
     team: Chelsea,
     nationality: Brazil,
+    color: "bg-blue-600",
   },
   {
     id: 10,
@@ -112,6 +121,7 @@ const players = [
     image: Trippier,
     team: Newcastle,
     nationality: England,
+    color: "bg-stone-500",
   },
   {
     id: 11,
@@ -120,6 +130,7 @@ const players = [
     image: Pickford,
     team: Everton,
     nationality: England,
+    color: "bg-blue-700",
   },
   {
     id: 12,
@@ -128,6 +139,7 @@ const players = [
     image: Hodgson,
     team: Palace,
     nationality: England,
+    color: "bg-neutral-300",
   },
 ]
 

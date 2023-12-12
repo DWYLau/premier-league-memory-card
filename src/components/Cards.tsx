@@ -1,0 +1,34 @@
+import players from "../utils/data.ts"
+
+function Card() {
+  return (
+    <>
+      {players.map(player => {
+        return (
+          <div
+            key={player.id}
+            className={`${player.color} h-80 w-64 flex flex-col rounded shadow-md`}
+          >
+            <img className='h-64' src={player.image} alt={player.last} />
+            <img
+              className='absolute h-20 w-20'
+              src={player.team}
+              alt={player.team}
+            />
+            <div className='bg-purple-950 p-2 font-outfit'>
+              <h1 className='text-white text-2xl font-bold'>{player.last}</h1>
+              <h2 className='text-white text-xl font-bold'>{player.first}</h2>
+              <img
+                className='absolute bottom-7 start-52'
+                src={player.nationality}
+                alt={player.nationality}
+              />
+            </div>
+          </div>
+        )
+      })}
+    </>
+  )
+}
+
+export default Card
