@@ -1,12 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Inter+Tight:wght@300&family=Outfit:wght@500&family=Oxygen&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Inter&family=Inter+Tight:wght@300&family=Outfit:wght@500&family=Oxygen&display=swap");
 
 body {
   height: 100vh;
-  background: url("../assets/premier-league-logo.png") no-repeat;
   background-color: #f0f0f0;
+  background: url("../assets/premier-league-logo.png") no-repeat;
   background-position-x: left;
   background-position-y: bottom;
 }
