@@ -9,6 +9,7 @@ body {
   background: url("../assets/premier-league-logo.png") no-repeat;
   background-position-x: left;
   background-position-y: bottom;
+  overflow: hidden;
 }
 
 #root {

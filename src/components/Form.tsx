@@ -3,7 +3,12 @@ import trophy from "../assets/trophy.png"
 import whistle from "../assets/referee-whistle.mp3"
 import Board from "./Board"
 
-function Form() {
+interface Count {
+  count: number
+  setCount: React.Dispatch<React.SetStateAction<number>>
+}
+
+function Form({ count, setCount }: Count) {
   const [startGame, setStartGame] = useState(false)
 
   function handleStart() {
@@ -33,7 +38,7 @@ function Form() {
   }
 
   if (startGame === true) {
-    return <Board />
+    return <Board count={count} setCount={setCount} />
   }
 }
 
