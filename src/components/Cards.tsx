@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react"
 import data from "../utils/data.ts"
+import click from "../assets/click.wav"
+import "../styles/Cards.css"
 
 type ClickEvent = React.MouseEvent<HTMLDivElement>
 
@@ -27,9 +29,17 @@ function Card({ count, setCount }: Count) {
   shuffleCards(players)
 
   useEffect(() => {
+    function checkWin() {
+      if (idArray.length === 12) {
+        setIsPlaying(false)
+        console.log("WIN")
+      }
+    }
+
     shuffleCards(players)
     setCount(idArray.length)
     console.log(idArray)
+    checkWin()
   }, [players, idArray, count, setCount])
 
   function shuffleCards(cards: PlayersArray) {
@@ -42,13 +52,15 @@ function Card({ count, setCount }: Count) {
 
   function handleClick(event: ClickEvent) {
     const key = event.currentTarget.dataset.id
+    const audio = new Audio(click)
     if (key && !idArray.includes(key)) {
       setIdArray(prevInputs => [...prevInputs, key])
-      console.log("PUSHED/NEXT")
+      audio.play()
+      console.log("PUSHED/NEXT") // MAKE LOSE SCREEN WITH RESET BUTTON AND MAKE HANDLERESET FUNCTION THAT IS PASSED THROUGH AND SET IS PLAYING TO TRUE AFTER
     } else {
       setIsPlaying(false)
-      console.log("LOSE") // MAKE LOSE SCREEN WITH RESET BUTTON AND MAKE HANDLERESET FUNCTION THAT IS PASSED THROUGH AND SET IS PLAYING TO TRUE AFTER
-    } // MAKE WIN SCREEN IF PLAYER HITS ALL 12 GOALS
+      console.log("LOSE") // MAKE WIN SCREEN IF PLAYER HITS ALL 12 GOALS
+    }
   }
 
   if (isPlaying === true) {
@@ -60,7 +72,7 @@ function Card({ count, setCount }: Count) {
               data-id={player.id}
               onClick={handleClick}
               key={player.id}
-              className={`${player.color} box-content pb-3 h-80 w-64 flex flex-col rounded shadow-md animate__animated animate__fadeInUp cursor-pointer hover:shadow-2xl hover:shadow-blue-900 hover:ring-4 ring-violet-800 transition ease-in-out delay-50`}
+              className={`${player.color} cards relative box-content pb-3 h-80 w-64 flex flex-col rounded shadow-md cursor-pointer hover:shadow-2xl hover:shadow-blue-900 hover:ring-4 ring-violet-800`}
             >
               <img className='h-64' src={player.image} alt={player.last} />
               <img
