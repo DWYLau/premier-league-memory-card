@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import data from "../utils/data.ts"
 import click from "../assets/click.wav"
 import "../styles/Cards.css"
+import Lose from "./LoseScreen.tsx"
 
 type ClickEvent = React.MouseEvent<HTMLDivElement>
 
@@ -25,6 +26,7 @@ interface Count {
 function Card({ count, setCount }: Count) {
   const [idArray, setIdArray] = useState<string[]>([])
   const [isPlaying, setIsPlaying] = useState(true)
+  const [win, setWin] = useState(false)
   const players = data
   shuffleCards(players)
 
@@ -32,15 +34,13 @@ function Card({ count, setCount }: Count) {
     function checkWin() {
       if (idArray.length === 12) {
         setIsPlaying(false)
-        console.log("WIN")
+        setWin(true)
       }
     }
-
     shuffleCards(players)
     setCount(idArray.length)
-    console.log(idArray)
     checkWin()
-  }, [players, idArray, count, setCount])
+  }, [players, idArray, count, setCount, isPlaying])
 
   function shuffleCards(cards: PlayersArray) {
     for (let i = cards.length - 1; i > 0; i--) {
@@ -56,11 +56,15 @@ function Card({ count, setCount }: Count) {
     if (key && !idArray.includes(key)) {
       setIdArray(prevInputs => [...prevInputs, key])
       audio.play()
-      console.log("PUSHED/NEXT") // MAKE LOSE SCREEN WITH RESET BUTTON AND MAKE HANDLERESET FUNCTION THAT IS PASSED THROUGH AND SET IS PLAYING TO TRUE AFTER
     } else {
       setIsPlaying(false)
-      console.log("LOSE") // MAKE WIN SCREEN IF PLAYER HITS ALL 12 GOALS
     }
+  }
+
+  function handleReset() {
+    setIsPlaying(true)
+    setCount(0)
+    setIdArray([])
   }
 
   if (isPlaying === true) {
@@ -93,6 +97,18 @@ function Card({ count, setCount }: Count) {
           )
         })}
       </>
+    )
+  }
+
+  if (isPlaying === false && win === false) {
+    return <Lose handleReset={handleReset} />
+  }
+
+  if (isPlaying === false && win === true) {
+    return (
+      <div className='absolute top-32 left-0 right-0 mx-auto h-96 w-1/4 bg-white rounded shadow-lg flex flex-col justify-center items-center font-outfit animate__animated animate__fadeIn'>
+        <h1>HELLO</h1>
+      </div>
     )
   }
 }

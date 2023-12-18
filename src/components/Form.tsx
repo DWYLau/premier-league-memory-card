@@ -19,7 +19,7 @@ function Form({ count, setCount }: Count) {
 
   if (startGame === false) {
     return (
-      <div className='absolute top-32 left-0 right-0 mx-auto h-96 w-1/4 bg-white rounded shadow-lg flex flex-col justify-center items-center font-outfit animate__animated animate__fadeIn'>
+      <div className='absolute top-32 left-0 right-0 mx-auto h-96 w-1/4 bg-white rounded shadow-lg flex flex-col justify-center items-center font-outfit animate__animated animate__fadeIn ring ring-violet-700'>
         <img className='h-40 m-2' src={trophy} alt='Premier League Trophy' />
         <div className='flex flex-col justify-center items-center m-2 text-lg'>
           <p>Aim for the prestigious Premier League trophy!</p>
