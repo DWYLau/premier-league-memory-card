@@ -27,7 +27,7 @@ function Lose({ handleReset }: Reset) {
   }
 
   return (
-    <div className='absolute top-2 left-0 right-0 mx-auto h-2/3 w-1/3 bg-white rounded shadow-lg flex flex-col justify-center items-center font-outfit animate__animated animate__fadeIn ring ring-violet-700'>
+    <div className='absolute top-2 left-0 right-0 mx-auto h-[510px] w-1/3 bg-white rounded shadow-lg flex flex-col justify-evenly items-center font-outfit animate__animated animate__fadeIn ring-4 ring-violet-900'>
       <h1 className='text-2xl mt-3'>MISSED PENALTY!</h1>
       <img className='px-5 py-3 rounded-[40px]' src={miss} alt='miss goal' />
       <p className='text-lg'>
@@ -36,7 +36,7 @@ function Lose({ handleReset }: Reset) {
       <p className='text-lg'>Better luck next time!</p>
       <button
         onClick={handleClick}
-        className='text-purple-700 hover:text-white border border-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-semibold rounded-lg text-sm px-5 py-2.5 my-1 text-center me-2 mb-2 dark:border-purple-400 dark:text-purple-400 dark:hover:text-white dark:hover:bg-purple-500 dark:focus:ring-purple-900 transition ease-in-out delay-100'
+        className='text-purple-700 hover:text-white border border-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-semibold rounded-lg text-base px-5 py-2.5 my-1 text-center me-2 mb-2 dark:border-purple-400 dark:text-purple-400 dark:hover:text-white dark:hover:bg-purple-500 dark:focus:ring-purple-900 transition ease-in-out delay-100'
       >
         Restart Game
       </button>

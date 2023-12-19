@@ -64,6 +64,7 @@ function Card({ count, setCount }: Count) {
 
   function handleReset() {
     setIsPlaying(true)
+    setWin(false)
     setCount(0)
     setIdArray([])
   }
