@@ -11,12 +11,7 @@ function Lose({ handleReset }: Reset) {
 
   useEffect(() => {
     const audio = audioRef.current
-
-    function handlePlayAudio() {
-      audio.play()
-    }
-
-    handlePlayAudio()
+    audio.play()
 
     return () => {
       audio.pause()

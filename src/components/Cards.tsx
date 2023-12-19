@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import data from "../utils/data.ts"
 import click from "../assets/click.wav"
 import "../styles/Cards.css"
+import Win from "./WinScreen.tsx"
 import Lose from "./LoseScreen.tsx"
 
 type ClickEvent = React.MouseEvent<HTMLDivElement>
@@ -105,11 +106,7 @@ function Card({ count, setCount }: Count) {
   }
 
   if (isPlaying === false && win === true) {
-    return (
-      <div className='absolute top-32 left-0 right-0 mx-auto h-96 w-1/4 bg-white rounded shadow-lg flex flex-col justify-center items-center font-outfit animate__animated animate__fadeIn'>
-        <h1>HELLO</h1>
-      </div>
-    )
+    return <Win handleReset={handleReset} />
   }
 }
 
