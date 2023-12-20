@@ -6,9 +6,9 @@ Memory Cards for The Odin Project
 
 ## Description
 
-Single page memory card game designed around the theme of football players and the Premier League.
-Users can click on cards to get points, however they cannot click on the same player twice!
-Created using TypeScript, React and styled with TailwindCSS.
+- Single page memory card game designed around the theme of football players and the Premier League.
+- Users can click on cards to get points, however they cannot click on the same player twice!
+- Created using TypeScript, React and styled with TailwindCSS.
 
 ## Aims
 
