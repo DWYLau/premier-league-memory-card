@@ -49,6 +49,10 @@ Memory Cards for The Odin Project
 - Team Logos from https://www.premierleague.com
 - Roy Hodgson Render from https://www.footyrenders.com/managers/roy-hodgson-2/
 - Soccer Ball Icon created by juicy_fish from Flaticon
+- Fernando Torres goal gif from https://www.masquecena.com/wp-content/uploads/2012/04/fernando-torres-golo-barcelona.gif
+- Jason Puncheon Miss gif from https://assets-cms.thescore.com/uploads/image/file/26099/cropped_Puncheon.gif
+- Winning screen commentary from https://www.youtube.com/watch?v=SCmSJvT0Z1Y
+- Losing screen commentary from https://www.youtube.com/watch?v=EZzvfntaGa0&t=5s
 
 ## Live Preview
 
