@@ -39,7 +39,7 @@ Memory Cards for The Odin Project
 - Tailwind CSS
 - Vite
 
-## Attritute
+## Attributes
 
 - Whistle Sound from https://www.freesoundslibrary.com/referee-blowing-whistle-sound-effect/
 - Trophy Image from https://www.cleanpng.com/png-premier-league-uefa-champions-league-manchester-ci-3401612/
