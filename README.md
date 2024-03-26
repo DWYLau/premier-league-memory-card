@@ -58,3 +58,4 @@ Memory Cards for The Odin Project
 
 https://dl-premier-league-cards.netlify.app
 - CSS animations may take time to load.
+- Windows users, please view at 80% zoom for best experience.
