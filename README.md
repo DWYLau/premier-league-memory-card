@@ -56,5 +56,5 @@ Memory Cards for The Odin Project
 
 ## Live Preview
 
-- https://ephemeral-valkyrie-b30c60.netlify.app
+https://dl-premier-league-cards.netlify.app
 - CSS animations may take time to load.
